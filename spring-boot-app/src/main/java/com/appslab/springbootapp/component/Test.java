@@ -1,5 +1,6 @@
-package com.appslab.springbootapp;
+package com.appslab.springbootapp.component;
 
+import com.appslab.springbootapp.service.EmployeeService;
 import org.springframework.stereotype.Component;
 
 @Component

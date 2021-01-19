@@ -1,4 +1,4 @@
-package com.appslab.springbootapp;
+package com.appslab.springbootapp.service;
 
 import com.appslab.springbootapp.model.*;
 
