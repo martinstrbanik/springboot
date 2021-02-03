@@ -32,7 +32,13 @@ public class Address {
         return state;
     }
 
-
+    public Address(long id, String street, long zipCode, String city, String state) {
+        this.id = id;
+        this.street = street;
+        this.zipCode = zipCode;
+        this.city = city;
+        this.state = state;
+    }
 
     public void setStreet(String street) {
         this.street = street;

@@ -10,7 +10,7 @@ public class CompanyServiceImpl implements CompanyService {
     CompanyRepository ServiceImpl;
 
     public CompanyServiceImpl(CompanyRepository serviceImpl) {
-        ServiceImpl = serviceImpl;
+        this.ServiceImpl = serviceImpl;
     }
 
     @Override
