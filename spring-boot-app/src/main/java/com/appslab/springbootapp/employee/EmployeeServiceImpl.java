@@ -1,13 +1,26 @@
-package com.appslab.springbootapp.serviceImpl;
+package com.appslab.springbootapp.employee;
 
 import com.appslab.springbootapp.model.*;
-import com.appslab.springbootapp.service.EmployeeService;
+import com.appslab.springbootapp.employee.EmployeeService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 @Service
 public class EmployeeServiceImpl implements EmployeeService {
-    int number = 0;
+
+    EmployeeRepository employeeRepository;
+
+    public EmployeeServiceImpl(EmployeeRepository employeeRepository) {
+        this.employeeRepository = employeeRepository;
+    }
+
+    @Override
+    public void saveEmployee(Employee employee) {
+        employeeRepository.save(employee);
+    }
+
+
+        int number = 0;
     @Override
     public void writeNumber(){
         number++;

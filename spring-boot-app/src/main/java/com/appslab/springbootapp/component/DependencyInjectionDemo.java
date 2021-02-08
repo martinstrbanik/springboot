@@ -1,7 +1,7 @@
 package com.appslab.springbootapp.component;
 
 import com.appslab.springbootapp.model.Worker;
-import com.appslab.springbootapp.service.EmployeeService;
+import com.appslab.springbootapp.employee.EmployeeService;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;

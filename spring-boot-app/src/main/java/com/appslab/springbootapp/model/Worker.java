@@ -1,5 +1,8 @@
 package com.appslab.springbootapp.model;
 
+
+
+
 public class Worker {
     float salary;
     int bonus;
