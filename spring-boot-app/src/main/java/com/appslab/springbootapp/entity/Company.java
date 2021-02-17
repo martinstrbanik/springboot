@@ -1,8 +1,10 @@
 package com.appslab.springbootapp.entity;
 
+import com.appslab.springbootapp.employee.Employee;
 import com.sun.istack.NotNull;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 public class Company {
@@ -14,6 +16,7 @@ public class Company {
     @OneToOne(cascade = CascadeType.ALL)
     @NotNull
     Address address;
+
 
     public Company(String name, Address address) {
         this.name = name;
