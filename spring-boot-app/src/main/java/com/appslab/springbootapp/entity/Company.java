@@ -17,6 +17,8 @@ public class Company {
     @NotNull
     Address address;
 
+    @OneToMany(mappedBy="company")
+    private Set<Employee> employees;
 
     public Company(String name, Address address) {
         this.name = name;
